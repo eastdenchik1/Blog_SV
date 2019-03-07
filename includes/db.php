@@ -13,3 +13,5 @@ if ($connection == false){
     echo mysqli_connect_error();
     exit();
 }
+
+mysqli_set_charset($connection, 'utf8');
